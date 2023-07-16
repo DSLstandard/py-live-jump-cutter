@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "vq"
+version = "0.1.0"
+description = ""
+authors = ["dosh <none>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+av = "^11.0.0"
+numpy = "^1.26.2"
+opencv-python = "^4.8.1.78"
+tqdm = "^4.66.1"
+
+[tool.poetry.scripts]
+vq = "vq.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
